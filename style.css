@@ -127,12 +127,6 @@ footer{
     justify-content: center;
 }
 
-.stud-image img{
-    width: 300px;
-    height: 300px;
-    border-radius: 0;
-    object-fit: cover;
-}
 
 .stud-text p{
     line-height: 1.6;
