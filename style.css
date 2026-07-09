@@ -1,32 +1,142 @@
 *{
-    margin: 10px;
-    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 43%, rgba(237, 221, 83, 1) 100%);
-  
-}
-
-body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Rubik", sans-serif;
 }
+  
 
+body{
+    margin: 0;
+    min-height: 100vh;
+    background: #F8FAFC;
+}
 
 nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    gap: 2rem;
+    gap: 20px;
     list-style: none;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
 }
 
 nav ul li a{
     text-decoration: none;
-    border: 1px solid rgb(22, 105, 75);
+    color: rgb(0, 0, 0);
     padding: 0.5rem 1rem;
-    border-radius: 10px;
     transition: all 0.5s ease;
+    border-radius: 10px;
+    font-size:22px;
 }
 
 nav ul li a:hover{
-    background-color: rgb(77, 96, 175);
+    background-color:#000000;
+    color: rgb(254, 254, 254);
     transform: translateY(-40px)
+}
+
+#about{
+    color: #1E293B;
+    border: 7px solid;
+}
+
+#projects{
+    color: rgb(0, 0, 0);
+}
+
+#skills{
+    color: rgb(0, 0, 0);
+}
+
+#experience{
+    color: rgb(0, 0, 0);
+
+}
+#contact{
+    color: rgb(0, 0, 0);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    min-height: 80vh;
+    padding: 80px 60px;
+    scroll-margin-top: 100px;
+}
+
+nav h1{
+    color: rgb(0, 0, 0);
+    margin: 0;
+    align-items: flex-start;
+}
+
+footer{
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+}
+
+.footer-links{
+    margin-top: 10px;
+}
+
+.footer-links a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover{
+    color: #38bdf8;
+}
+
+.stud{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.stud-text{
+    width: 60%;
+    font-size: 18px;
+    background-color: #F8FAFC;
+}
+
+.stud-image{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.stud-image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.stud-text p{
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: #F8FAFC;
 }
